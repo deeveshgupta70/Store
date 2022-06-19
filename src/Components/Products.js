@@ -18,7 +18,8 @@ const Products = () => {
     //     setProducts(data);
     // };
     // fetchProducts();
-  });
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, []);
 
   const handleAdd = (product) => {
     dispatch(add(product));
